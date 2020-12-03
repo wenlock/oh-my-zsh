@@ -1,11 +1,10 @@
 #!/bin/zsh
 
-# WARP
-# ====
-# oh-my-zsh plugin
+# WARP DIRECTORY
+# ==============
+# Jump to custom directories in terminal
+# because `cd` takes too long...
 #
 # @github.com/mfaerevaag/wd
 
-wd() {
-    . $ZSH/plugins/wd/wd.sh
-}
+eval "wd() { source '${0:A:h}/wd.sh' }"
